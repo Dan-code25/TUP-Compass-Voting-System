@@ -14,7 +14,7 @@ export default function ElectionClosed({ userProfile, signOut }) {
             Election Has Ended
           </h1>
           <p className="text-[#626672] mb-0">
-            Voting is currently disabled. Thank you for your participation.
+            Voting is now disabled. Please wait and check the TUP-Manila Compass Official Page for the announcement of results.
           </p>
         </div>
       </div>

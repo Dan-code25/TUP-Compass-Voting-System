@@ -108,7 +108,7 @@ export function useAdminLogic() {
             .eq("id", 1);
 
           if (!error) {
-            alert("⏰ The election deadline has passed. Voting is now CLOSED.");
+            alert("The election deadline has passed. Voting is now CLOSED.");
             setElectionSettings((prev) => ({ ...prev, is_active: false }));
             setActiveTab("results");
             fetchData();

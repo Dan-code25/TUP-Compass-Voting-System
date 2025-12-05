@@ -1,4 +1,3 @@
-import React from "react";
 
 export default function SubmitBar({ isReady, onSubmit }) {
   return (
@@ -11,7 +10,7 @@ export default function SubmitBar({ isReady, onSubmit }) {
           onClick={onSubmit}
           disabled={!isReady}
           className={`px-6 py-2 rounded-lg font-bold text-white transition-colors ${
-            isReady ? "bg-[#759CE6] hover:bg-[#887AB8]" : "bg-[#B3A3DB]"
+            isReady ? "bg-[#22162E] hover:bg-[#433A58]" : "bg-[#B3A3DB]"
           }`}
         >
           Submit Ballot

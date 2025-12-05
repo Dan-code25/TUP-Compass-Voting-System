@@ -42,7 +42,7 @@ export default function SettingsTab({ electionSettings, refreshData }) {
   const handleResetElection = async () => {
     if (
       !confirm(
-        "🚨 DANGER ZONE 🚨\n\nThis will PERMANENTLY DELETE:\n- All Candidates\n- All Votes\n\nAre you sure?"
+        "DANGER ZONE\n\nThis will PERMANENTLY DELETE:\n- All Candidates\n- All Votes\n\nAre you sure?"
       )
     )
       return;
@@ -72,7 +72,7 @@ export default function SettingsTab({ electionSettings, refreshData }) {
       <h2 className="text-2xl font-bold text-[#22162E]">Election Settings</h2>
 
       <div
-        className={`p-6 rounded-xl border shadow-sm flex items-center justify-between ${
+        className={` p-6 rounded-xl border shadow-sm flex items-center justify-between ${
           electionSettings.is_active
             ? "bg-[#EFD8ED] border-[#B3A3DB]"
             : "bg-[#F4F5F4] border-[#B3A3DB]"
@@ -109,7 +109,7 @@ export default function SettingsTab({ electionSettings, refreshData }) {
           {!electionSettings.is_active && (
             <button
               onClick={() => updateStatus(true)}
-              className="bg-[#759CE6] text-white px-4 py-2 rounded-lg font-bold hover:bg-[#887AB8] transition-colors cursor-pointer"
+              className="bg-[#22162E] text-white px-4 py-2 rounded-lg font-bold hover:bg-[#433A58] transition-colors cursor-pointer"
             >
               Start Election
             </button>
@@ -117,7 +117,7 @@ export default function SettingsTab({ electionSettings, refreshData }) {
           {electionSettings.is_active && (
             <button
               onClick={() => updateStatus(false)}
-              className="bg-[#433A58] text-white px-4 py-2 rounded-lg font-bold hover:bg-[#22162E] transition-colors"
+              className="bg-[#433A58] text-white px-4 py-2 rounded-lg font-bold hover:bg-[#22162E] transition-colors cursor-pointer"
             >
               Stop Election
             </button>

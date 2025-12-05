@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { supabase } from "../lib/supabaseClient";
 
 // Imports
@@ -50,7 +50,7 @@ const LoginPage = () => {
             className="h-[120px] mb-[-30px] ml-[-30px] "
           />
           <p className="text-center w-[250px] mt-2 text-[#F4F5F4] text-[14px]">
-            The TUP-COMPASS Voting System
+            The TUP-Manila Compass Voting System
           </p>
           <img src={heroImg} alt="Hero" className="h-[270px] mt-4" />
         </section>
@@ -80,7 +80,7 @@ const LoginPage = () => {
                 type="text"
                 className="w-[320px] h-[40px] p-2 bg-white rounded-[8px] border border-[#B3A3DB] focus:outline-none focus:ring-2 focus:ring-[#759CE6] font-normal transition-all"
                 name="tupId"
-                placeholder="Enter ID Number"
+                placeholder="TUPM-XX-XXXX"
                 value={studentId}
                 onChange={(e) => setStudentId(e.target.value.trim())}
               />

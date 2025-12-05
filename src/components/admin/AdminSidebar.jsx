@@ -35,7 +35,7 @@ export default function AdminSidebar({
         <img src={logo} alt="logo" className="ml-[-10px] mb-[-20px] h-[60px]" />
       </div>
 
-      <nav className="flex-1 px-4 space-y-2">
+      <nav className="flex-1 px-4 space-y-2 ">
         {!electionSettings.is_active && electionSettings.start_time && (
           <button
             onClick={() => setActiveTab("results")}
@@ -66,7 +66,7 @@ export default function AdminSidebar({
         </div>
         <button
           onClick={onSignOut}
-          className="flex items-center gap-2 text-sm text-[#B3A3DB] hover:text-[#F4F5F4] transition-colors w-full px-2"
+          className="flex items-center gap-2 text-sm text-[#B3A3DB] hover:text-[#F4F5F4] transition-colors w-full px-2 cursor-pointer"
         >
           <LogOut size={16} /> Sign Out
         </button>

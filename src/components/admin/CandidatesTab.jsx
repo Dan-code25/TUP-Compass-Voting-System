@@ -152,7 +152,7 @@ export default function CandidatesTab({ candidates, refreshData }) {
             onChange={(e) => setForm({ ...form, platform: e.target.value })}
           />
           <textarea
-            placeholder="Achievements (one per line)"
+            placeholder="Achievements/Credentials (one per line)"
             className="col-span-1 md:col-span-2 border p-2 rounded h-24"
             value={form.achievements}
             onChange={(e) => setForm({ ...form, achievements: e.target.value })}
@@ -246,13 +246,13 @@ export default function CandidatesTab({ candidates, refreshData }) {
                   <div className="flex justify-end items-center gap-3">
                     <button
                       onClick={() => handleView(c)}
-                      className="text-[#759CE6] hover:text-[#887AB8] font-medium text-xs uppercase tracking-wide"
+                      className="text-[#759CE6] hover:text-[#887AB8] font-medium text-xs uppercase tracking-wide cursor-pointer"
                     >
                       View
                     </button>
                     <button
                       onClick={() => handleDelete(c.id)}
-                      className="text-[#626672] hover:text-[#22162E] transition-colors"
+                      className="text-[#626672] hover:text-[#22162E] transition-colors cursor-pointer"
                     >
                       <Trash2 size={18} />
                     </button>
